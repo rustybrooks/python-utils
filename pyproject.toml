@@ -11,7 +11,8 @@ dependencies = []
 
 [tool.uv.sources]
 rb_publish = { workspace = true }
-# rb_sql = { workspace = true }
+rb_api_framework = { workspace = true}
+rb_sql = { workspace = true }
 
 
 [tool.uv.workspace]
@@ -24,7 +25,8 @@ dev-dependencies = [
     "ruff>=0.3.0",
     "pytest>=8.3.4",
     "rb_publish",
-    # "rb_sql",
+    "rb_api_framework",
+    "rb_sql",
 ]
 package = false
 

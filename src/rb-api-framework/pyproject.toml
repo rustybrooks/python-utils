@@ -1,0 +1,23 @@
+[project]
+name = "rb_api_framework"
+version = "0.0.0"
+description = "Simple API framework for Django or Flask"
+authors = [
+  { name = "Rusty Brooks", email = "me@rustybrooks.com" }
+]
+requires-python = ">=3.10"
+readme = "README.md"
+dependencies = [
+  "newrelic",
+  "pytz",
+  "python-dateutil",
+  "werkzeug",
+  "flask",
+  "ujson",
+  "requests"
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
