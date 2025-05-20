@@ -10,7 +10,7 @@ readme = "README.md"
 dependencies = [
   "python-dateutil",
   "pytz",
-  "sqlalchemy~=2.0"
+  "sqlalchemy~=1.4"
 ]
 
 
