@@ -566,7 +566,7 @@ class SQLConn(object):
                     "Query was expected to return 1 row, returned %r (query=%r, data=%r)"
                     % (rs.rowcount, statement, data)
                 )
-            return dictobj(row.mapping()) if as_dictobj else row
+            return dictobj(row.items()) if as_dictobj else row
 
     def select_0or1(self, statement, data=None):
         with self.cursor() as c:
