@@ -17,8 +17,8 @@ rb_sql = { workspace = true }
 
 [tool.uv.workspace]
 members = [
- "src/rb-sql",
- "src/rb-publish"
+ "rb-sql",
+ "rb-publish"
 ]
 
 [tool.uv]
