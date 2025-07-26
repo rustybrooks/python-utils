@@ -779,8 +779,8 @@ class Migration(object):
         else:
             raise Exception("Unknown database")
 
-        res = SQL.select_one("select max(version_post) as version from migrations")
-        version = res.version if (res.version is not None and not initial) else -1
+        res = SQL.select_0or1("select max(version_post) as version from migrations")
+        version = res.version if (res and res.version is not None and not initial) else -1
         todo = sorted([x for x in cls.registry.keys() if x > version] + apply_versions)
         cls.log(logs, "Version = %d, todo = %r, initial=%r", version, todo, initial)
 
