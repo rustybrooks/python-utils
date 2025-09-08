@@ -595,7 +595,7 @@ class SQLConn(object):
             if self.sql.mysql:
                 return " ignore"
             elif self.sql.sqlite:
-                return "or ignore"
+                return " or ignore"
 
             return ""
 
