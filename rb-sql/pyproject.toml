@@ -1,6 +1,6 @@
 [project]
 name = "rb_sql"
-version = "0.0.1"
+version = "0.0.2"
 description = "Postgres abstraction on top of sqlalchemy"
 authors = [
   { name = "Rusty Brooks", email = "me@rustybrooks.com" }
